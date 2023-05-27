@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+    <changeSet  id="20230422-001"  author="lnuic">
+        <createTable  tableName="PHOTO_DETAILS">
+            <column  name="ID"  type="int"  autoIncrement="true">
+                <constraints  primaryKey="true"  nullable="false"/>
+            </column>
+            <column  name="NAME"  type="varchar(50)"/>
+            <column  name="DESCRIPTION"  type="varchar(50)"/>
+            <column  name="AUTHOR"  type="varchar(50)"/>
+            <column  name="IMG_URL"  type="varchar(50)"/>
+            <column  name="WIDTH"  type="varchar(50)"/>
+            <column  name="HEIGHT"  type="varchar(50)"/>
+
+        </createTable>
+    </changeSet>
+
+    <changeSet  id="20230501-001"  author="lnuic">
+        <createTable  tableName="PHOTO_TAG">
+            <column  name="ID"  type="int"  autoIncrement="true">
+                <constraints  primaryKey="true"  nullable="false"/>
+            </column>
+            <column  name="NAME"  type="varchar(50)"/>
+            <column  name="DESCRIPTION"  type="varchar(50)"/>
+
+        </createTable>
+    </changeSet>
+
+</databaseChangeLog>
